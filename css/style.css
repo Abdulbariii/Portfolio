@@ -144,6 +144,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 30px;
+  padding-right: 0;
 }
 
 .about-container__content {
@@ -330,6 +331,22 @@
     font-size: 17px;
   }
 
+  .about-activity__header {
+    font-size: 25px;
+  }
+
+  .activity-text__header {
+    font-size: 20px;
+  }
+
+  .activity-text__p {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .dot-ver-1 {
+    height: 1400px;
+  }
   .dot-2 {
     margin-bottom: 10px;
   }
@@ -339,6 +356,7 @@
   }
   .about-activity {
     flex-direction: row;
+    margin-top: 100px;
   }
 
   .scroll-img {
