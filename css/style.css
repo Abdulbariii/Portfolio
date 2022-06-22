@@ -148,15 +148,48 @@
 .about-container__content {
   display: flex;
   justify-content: space-around;
+  gap: 50px;
+  padding: 30px;
+}
+.about-header {
+  font-size: 100px;
+  padding: 100px;
+  display: flex;
+  padding-left: 55px;
+  padding-bottom: 50px;
+}
+
+.dot-1 {
+  height: 50px;
+  width: 50px;
+  background-color: #ff0266;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
+  word-spacing: 2px;
+  width: 50%;
+  padding: 0 30px;
+}
+
+.myName {
+  color: #ff0266;
+}
+
+.about-text__header {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.about-text__p {
+  font-size: 20px;
 }
 .about-activity {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  padding: 0 30px;
 }
 
 @media only screen and (max-width: 600px) {
