@@ -21,6 +21,8 @@
   width: auto;
   overflow: hidden;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  animation: rightToLeft 1s;
+  transition: all 0.5s;
 }
 
 .my-img {
@@ -37,10 +39,9 @@
 }
 
 .hr {
-  color: #000000;
   position: absolute;
   width: 100%;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #6200ee;
   z-index: -1;
   top: 200px;
   transform: rotate(5deg);
@@ -49,13 +50,14 @@
 
 .hr-0 {
   position: absolute;
+
   color: #000000;
   display: inline-block;
   position: absolute;
-  border-top: 2px solid #000000a1;
+  border-top: 2px solid #03dac6;
   z-index: -1;
-  margin-left: 25%;
-  width: 100%;
+  margin-left: 30%;
+  width: 90%;
   transition: all 0.3s;
   transform: rotate(100deg);
 }
@@ -80,6 +82,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
+  animation: leftToRight 1s;
+  transition: all 0.5s;
 }
 
 .home-header__hi {
@@ -87,10 +91,23 @@
   font-size: 50px;
   font-weight: 400;
 }
+.coma {
+  color: #03dac6;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #6200ee;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 
 .home-header__name {
   font-size: 90px;
 }
+
 .home-header__p {
   width: 200px;
   font-size: 15px;
@@ -98,11 +115,22 @@
 
 .scroll-btn {
   padding-top: 70px;
+  text-decoration: none;
+  color: gray;
+}
+
+.scroll-btn:hover {
+  color: gray;
 }
 
 .scroll-img {
   width: 100px;
   height: 100px;
+  transition: all 0.3s;
+}
+
+.scroll-img:hover {
+  transform: translateY(10px);
 }
 
 .scroll-text {
@@ -170,5 +198,29 @@
 
   .nav-item-home {
     padding-right: 0px !important;
+  }
+}
+
+/*Adding animations*/
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(120px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
