@@ -138,6 +138,27 @@
   font-size: 12px;
 }
 
+/* About section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-container__content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+}
+.about-activity {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-bar {
     display: inline-block;
