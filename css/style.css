@@ -151,6 +151,7 @@
   justify-content: space-around;
   gap: 50px;
   padding: 30px;
+  flex-wrap: wrap;
 }
 .about-header {
   font-size: 100px;
@@ -169,7 +170,7 @@
 }
 
 .dot-ver-1 {
-  height: 700px;
+  height: 800px;
   width: 3px;
   background-color: #ff02671f;
   position: absolute;
@@ -192,6 +193,7 @@
   animation: leftToRight 0.1s ease-in;
   transition: all 0.3s;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 .about-text:hover {
   transform: scale(1.1);
@@ -220,6 +222,7 @@
   width: 50%;
   padding: 0 30px;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .activity-1 {
@@ -232,10 +235,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   transition: all 0.3s;
-  transform: right top;
 }
 
 .activity-text__container-1 {
@@ -273,6 +275,28 @@
   }
   .scroll-text {
     display: none;
+  }
+  .about-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .about-text__header {
+    font-size: 17px;
+  }
+
+  .dot-2 {
+    margin-bottom: 10px;
+  }
+
+  .about-text {
+    font-size: 11px;
+  }
+  .about-activity {
+    flex-direction: row;
+    height: 400px;
+    width: 400px;
   }
 
   .scroll-img {
