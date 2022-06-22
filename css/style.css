@@ -143,6 +143,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 30px;
 }
 
 .about-container__content {
@@ -155,22 +156,45 @@
   font-size: 100px;
   padding: 100px;
   display: flex;
-  padding-left: 55px;
+  padding-left: 40px;
   padding-bottom: 50px;
 }
 
 .dot-1 {
   height: 50px;
   width: 50px;
-  background-color: #ff0266;
+  background-color: #ff0267;
+  position: relative;
+  text-align: center;
+}
+
+.dot-ver-1 {
+  height: 700px;
+  width: 3px;
+  background-color: #ff02671f;
+  position: absolute;
+  left: 50%;
+  animation: leftToRight 0.3s;
+  transition: all 0.3s;
 }
 
 .about-text {
   display: flex;
   flex-direction: column;
   word-spacing: 2px;
-  width: 50%;
+  width: 70%;
   padding: 0 30px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  height: 320px;
+  z-index: 1;
+  animation: leftToRight 0.1s ease-in;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+.about-text:hover {
+  transform: scale(1.1);
 }
 
 .myName {
@@ -178,8 +202,13 @@
 }
 
 .about-text__header {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
+}
+.dot-2 {
+  height: 10px;
+  width: 10px;
+  background-color: #ff026739;
 }
 
 .about-text__p {
