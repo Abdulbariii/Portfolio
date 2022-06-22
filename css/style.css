@@ -199,6 +199,10 @@
   transform: scale(1.1);
 }
 
+.about-text:hover .dot-hr-1 {
+  width: 140px;
+}
+
 .myName {
   color: #ff0266;
 }
@@ -211,6 +215,20 @@
   height: 10px;
   width: 10px;
   background-color: #ff026739;
+  position: relative;
+  text-align: center;
+}
+
+.dot-hr-1 {
+  width: 0;
+  height: 2px;
+  background-color: #ff026739;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-right: 10px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
 }
 
 .about-text__p {
