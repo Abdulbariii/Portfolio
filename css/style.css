@@ -221,6 +221,25 @@
   padding: 0 30px;
 }
 
+.activity-1 {
+  background-image: url(/img/rizgaryy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% left;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.activity-text__container-1 {
+  background-color: #03dac5ee;
+  padding: 0 10px;
+  height: 30%;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-bar {
     display: inline-block;
