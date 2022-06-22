@@ -220,6 +220,14 @@
   text-align: center;
 }
 
+.grade {
+  color: #ff0266;
+}
+
+.wecode {
+  color: #03a1da;
+}
+
 .dot-hr-1 {
   width: 0;
   height: 2px;
@@ -233,7 +241,8 @@
 }
 
 .about-text__p {
-  font-size: 20px;
+  font-size: 17px;
+  padding-top: 20px;
 }
 .about-activity {
   display: flex;
@@ -329,6 +338,11 @@
 
   .about-text__header {
     font-size: 17px;
+  }
+
+  .about-text__p {
+    padding-top: 10px;
+    font-size: 10px;
   }
 
   .about-activity__header {
