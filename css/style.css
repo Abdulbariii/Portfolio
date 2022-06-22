@@ -223,37 +223,22 @@
   padding: 0 30px;
   gap: 30px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.activity-1 {
-  background-image: url(/img/rizgaryy.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% left;
-  position: relative;
-
+.about-activity__content {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  transition: all 0.3s;
-}
-
-.activity-text__container-1 {
-  background-color: #fffffff8;
-  padding: 10px;
-  height: 30%;
-
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  transition: all 0.3s;
+  position: relative;
 }
 
-.activity-1:hover .activity-text__container-1 {
-  height: 100%;
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: -130px;
+  margin-top: 10px;
 }
 
 .activity-text__header {
@@ -295,8 +280,6 @@
   }
   .about-activity {
     flex-direction: row;
-    height: 400px;
-    width: 400px;
   }
 
   .scroll-img {
