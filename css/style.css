@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/*change the the font of the root*/
+
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -12,6 +14,50 @@
 
 .nav-item {
   padding: 0 65px !important;
+}
+
+.home-container__img {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+}
+
+.my-img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  object-position: left bottom;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.my-img:hover {
+  transform: scale(1.1);
+}
+
+.hr {
+  color: #000000;
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid #000000;
+  z-index: -1;
+  top: 200px;
+  transform: rotate(5deg);
+  transition: all 0.3s;
+}
+
+.hr-0 {
+  position: absolute;
+  color: #000000;
+  display: inline-block;
+  position: absolute;
+  border-top: 2px solid #000000a1;
+  z-index: -1;
+
+  left: 400px;
+  width: 100%;
+  transition: all 0.3s;
+  transform: rotate(100deg);
 }
 
 .home-container {
@@ -29,12 +75,6 @@
   src: url(/font/MonumentExtended-Ultrabold.otf);
 }
 
-.my-img {
-  width: 300px;
-  height: 500px;
-  object-fit: cover;
-}
-
 .home-container__text {
   display: flex;
   flex-direction: column;
@@ -46,16 +86,25 @@
 }
 
 .home-header__name {
-  font-size: 70px;
+  font-size: 90px;
 }
 .home-header__p {
   width: 200px;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 600px) {
   .nav-bar {
     display: inline-block;
     margin-left: 0px !important;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .hr-0 {
+    display: none;
   }
 
   .nav-q {
@@ -71,6 +120,7 @@
     width: 300px;
     height: 300px;
     border-radius: 20%;
+    overflow: hidden;
   }
   .nav-item {
     padding: 0 0px !important;
