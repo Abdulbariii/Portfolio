@@ -219,6 +219,7 @@
   flex-direction: column;
   width: 50%;
   padding: 0 30px;
+  gap: 30px;
 }
 
 .activity-1 {
@@ -230,14 +231,32 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  transition: all 0.3s;
+  transform: right top;
 }
 
 .activity-text__container-1 {
-  background-color: #03dac5ee;
-  padding: 0 10px;
+  background-color: #fffffff8;
+  padding: 10px;
   height: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.3s;
+}
+
+.activity-1:hover .activity-text__container-1 {
+  height: 100%;
+}
+
+.activity-text__header {
+  font-size: 30px;
+  color: #ff0267;
 }
 
 @media only screen and (max-width: 600px) {
