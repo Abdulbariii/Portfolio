@@ -372,6 +372,52 @@
   color: #6200ee;
 }
 
+.skill-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+.tech-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.tech-img-3 {
+  object-position: bottom;
+}
+
+.skill-card {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  transition: all 0.3s;
+  transform-origin: top right;
+}
+
+.skill-card-1:hover {
+  width: 400px;
+  transform-origin: top left;
+}
+
+.tech-img-2 {
+  object-position: 80%;
+}
+.skill-card-3:hover .tech-img-3 {
+}
+.skill-card-2:hover {
+  width: 400px;
+}
+.skill-card-3:hover {
+  width: 400px;
+}
+.skill-card-4:hover {
+  width: 400px;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-bar {
     display: inline-block;
