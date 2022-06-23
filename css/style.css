@@ -372,6 +372,9 @@
   font-size: 40px;
   color: #6200ee;
 }
+.git-con {
+  display: flex;
+}
 
 .skill-container {
   display: flex;
@@ -445,7 +448,7 @@
 }
 
 .hr-skill {
-  width: 213px;
+  width: 0;
   height: 2px;
   background-color: #03dac54d;
   position: absolute;
@@ -500,7 +503,7 @@
   }
 
   .dot-ver-1 {
-    height: 1350px;
+    height: 1500px;
   }
   .dot-2 {
     margin-bottom: 10px;
@@ -558,6 +561,77 @@
 
   .nav-item-home {
     padding-right: 0px !important;
+  }
+
+  .skill-content_container {
+    padding-left: 145px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .skill-container {
+    padding-left: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .sc-2 {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .hr-skill {
+    display: none;
+  }
+  .git-con {
+    display: flex;
+    position: absolute;
+    bottom: -60px;
+  }
+  .skill-card {
+    width: 100px;
+    height: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .skill-card-1:hover {
+    width: 130px;
+  }
+  .skill-card-2:hover {
+    width: 130px;
+  }
+  .skill-card-3:hover {
+    width: 130px;
+  }
+  .skill-card-4:hover {
+    width: 130px;
+  }
+
+  .figma {
+    object-position: 30%;
+    object-fit: scale-down;
+  }
+
+  .git {
+    object-fit: scale-down;
+  }
+
+  .sass {
+    object-fit: scale-down;
+  }
+
+  .github {
+    object-fit: scale-down;
+  }
+
+  .skill-text {
+    font-size: 14px;
   }
 }
 
