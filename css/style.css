@@ -215,7 +215,7 @@
 .dot-2 {
   height: 10px;
   width: 10px;
-  background-color: #ff026739;
+  background-color: #ff0266;
   position: relative;
   text-align: center;
 }
@@ -353,13 +353,14 @@
   align-items: flex-start;
   justify-content: center;
   padding: 100px;
-  padding-top: 70px;
+  padding-top: 40px;
   padding-left: 300px;
 }
 
 .skill-text {
   font-size: 20px;
   font-weight: 200;
+  padding-bottom: 30px;
 }
 
 .tech {
@@ -387,7 +388,7 @@
 }
 
 .tech-img-3 {
-  object-position: bottom;
+  object-position: bottom left;
 }
 
 .skill-card {
@@ -406,8 +407,7 @@
 .tech-img-2 {
   object-position: 80%;
 }
-.skill-card-3:hover .tech-img-3 {
-}
+
 .skill-card-2:hover {
   width: 400px;
 }
@@ -416,6 +416,44 @@
 }
 .skill-card-4:hover {
   width: 400px;
+}
+
+.sc-2 {
+  margin-top: 20px;
+}
+
+.figma {
+  object-position: 80% !important;
+}
+
+.sass {
+  object-position: 50%;
+}
+
+.git {
+  object-position: 90%;
+}
+
+.sign-1 {
+  width: 15px;
+  height: 15px;
+
+  transition: all 0.3s;
+}
+.hr-con {
+  position: relative;
+}
+
+.hr-skill {
+  width: 213px;
+  height: 2px;
+  background-color: #03dac54d;
+  position: absolute;
+  right: 310px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  transition: all 0.3s;
 }
 
 @media only screen and (max-width: 600px) {
