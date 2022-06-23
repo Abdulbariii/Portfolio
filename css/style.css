@@ -189,7 +189,7 @@
   background-color: #ffffff;
   padding-top: 10px;
   padding-bottom: 30px;
-  height: 320px;
+  height: fit-content;
   z-index: 1;
   animation: leftToRight 0.1s ease-in;
   transition: all 0.3s;
@@ -243,6 +243,7 @@
 .about-text__p {
   font-size: 17px;
   padding-top: 20px;
+  flex-grow: inherit;
 }
 .about-activity {
   display: flex;
@@ -478,6 +479,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 450px;
   }
 
   .about-text__header {
@@ -486,7 +488,7 @@
 
   .about-text__p {
     padding-top: 10px;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .about-activity__header {
@@ -503,7 +505,7 @@
   }
 
   .dot-ver-1 {
-    height: 1500px;
+    height: 1600px;
   }
   .dot-2 {
     margin-bottom: 10px;
