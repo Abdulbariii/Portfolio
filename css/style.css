@@ -171,7 +171,7 @@
 }
 
 .dot-ver-1 {
-  height: 1314px;
+  height: 1414px;
   width: 3px;
   background-color: #ff02671f;
   position: absolute;
@@ -188,7 +188,7 @@
   padding: 0 30px;
   background-color: #ffffff;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
   height: fit-content;
   z-index: 1;
   animation: leftToRight 0.1s ease-in;
@@ -359,7 +359,7 @@
 }
 
 .skill-text {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   padding-bottom: 30px;
 }
@@ -453,11 +453,49 @@
   height: 2px;
   background-color: #03dac54d;
   position: absolute;
-  right: 310px;
+  right: 390px;
   top: 50%;
-
   transform: translateY(-50%);
   transition: all 0.3s;
+}
+
+.software-skill {
+  padding-top: 150px;
+}
+
+.hr-con-1 {
+  position: relative;
+}
+.hr-skill-1 {
+  width: 216px;
+  height: 2px;
+  background-color: #03dac54d;
+  position: absolute;
+  left: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.software-content {
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+.softtware-text {
+  padding: 20px;
+  width: 60%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.tech-dot {
+  margin: 0;
+  padding: 2px;
+  line-height: 42px;
+  color: #03dac571;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 600px) {
@@ -465,6 +503,23 @@
     display: inline-block;
     margin-left: 0px !important;
   }
+  .software-content {
+    flex-grow: inherit;
+    flex-wrap: wrap;
+  }
+
+  .softtware-text {
+    font-size: 15px;
+    padding: 0;
+
+    width: fit-content;
+  }
+
+  .tech-dot {
+    font-size: 10px;
+    display: none;
+  }
+
   .home-header__hi {
     margin-top: 0;
   }
@@ -633,7 +688,7 @@
   }
 
   .skill-text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
