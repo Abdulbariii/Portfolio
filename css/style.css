@@ -525,7 +525,7 @@
 }
 
 .hr-pro {
-  height: 700px;
+  height: 1300px;
   width: 3px;
   background-color: #29b5f658;
   position: absolute;
@@ -548,6 +548,7 @@
   padding: 100px;
   padding-top: 130px;
   padding-left: 300px;
+  gap: 50px;
 }
 
 .circle-2 {
@@ -566,6 +567,73 @@
   color: #29b6f6;
   font-weight: 400;
 }
+
+.pro-card__container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.pro-card {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: #03a1da;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.pro-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.pro-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.pro-card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 15%;
+  background-color: #29b5f6f3;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  gap: 27px;
+}
+
+.pro-card_h {
+  font-size: 35px;
+
+  margin-top: 120px;
+}
+
+.pro-btn {
+  width: 70px;
+  border: #29b6f6;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pro-card:hover .pro-card_text {
+  height: 100%;
+  padding-bottom: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .header-pro {
     margin-left: 60px;
