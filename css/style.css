@@ -659,6 +659,7 @@
 .get {
   color: #6300ee8b;
   padding: 20px 0;
+  font-weight: 100;
 }
 #msg {
   width: 400px;
@@ -722,8 +723,35 @@
   border-bottom: 3px solid #6300ee;
 }
 
+.container-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  background-color: #6300ee3d;
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-h {
+  font-weight: 100;
+  color: #6300ee;
+}
+
+.form-p {
+  font-size: 17px;
+}
+
 .footer-con {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -769,8 +797,8 @@
 
 .social-a {
   text-decoration: none;
-  color: #03a1da;
-  font-weight: 900;
+  color: #000000;
+  font-weight: 200;
   font-size: 17px;
 }
 
@@ -1024,12 +1052,28 @@
     margin-top: 50px;
   }
   .ver-contact {
-    height: 800px;
+    height: 1000px;
   }
 
   .form-con {
     width: 300px;
-    margin-left: 100px;
+  }
+
+  .form-text {
+    width: 300px;
+    height: 150px;
+  }
+
+  .container-form {
+    margin-left: 150px;
+  }
+  .form-h {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .form-p {
+    font-size: 13px;
   }
 
   .full-name {
@@ -1046,6 +1090,20 @@
 
   .sumbit {
     width: 100px;
+  }
+
+  .footer-con {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    width: 385px;
+    margin: 0;
+  }
+
+  .hr-footer {
+    width: 385px;
+    margin: 0;
   }
 }
 
