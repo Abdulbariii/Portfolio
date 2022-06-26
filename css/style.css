@@ -493,7 +493,8 @@
   padding: 20px;
   width: 60%;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #000000ab;
 }
 
 .tech-dot {
@@ -571,9 +572,13 @@
 .pro-card__container {
   display: flex;
   justify-content: flex-start;
-  flex-grow: inherit;
+
   flex-wrap: wrap;
   gap: 100px;
+}
+
+.link-btn__card {
+  text-decoration: none;
 }
 
 .pro-card {
@@ -604,11 +609,11 @@
   bottom: 0;
   transform: translateX(-50%);
   width: 100%;
-  height: 15%;
+  height: 17%;
   background-color: #29b5f6f3;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
-  gap: 27px;
+  gap: 20px;
 }
 
 .pro-card_h {
@@ -618,9 +623,16 @@
 }
 
 .pro-btn {
-  width: 70px;
-  border: #29b6f6;
+  width: 130px;
+  background-color: #ffffff;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.pro-btn:hover {
+  background-color: #9d9d9d7d;
 }
 
 .pro-card:hover .pro-card_text {
@@ -1090,6 +1102,14 @@
 
   .sumbit {
     width: 100px;
+  }
+  .pro-card_text {
+    gap: 13px;
+    padding: 25px 0;
+  }
+
+  .pro-btn {
+    font-size: 15px;
   }
 
   .footer-con {
